@@ -1,14 +1,12 @@
 import React from 'react';
 
 const BookList = () => (
-    <div>
+  <div>
     <h1>All Books</h1>
-    
-    <section className="book-list">
-      
-    </section>
-    
-    </div>
-  )
+
+    <section className="book-list" />
+
+  </div>
+);
 
 export default BookList;

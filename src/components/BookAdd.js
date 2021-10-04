@@ -1,8 +1,7 @@
 import React from 'react';
 
-const BookAdd = () => {
-  return (
-    <section>
+const BookAdd = () => (
+  <section>
     <h2>Add New Book</h2>
 
     <form className="form">
@@ -10,8 +9,7 @@ const BookAdd = () => {
       <input type="text" placeholder="Book Author" />
       <button type="submit">Add Book</button>
     </form>
-    </section>
-  )
-}
+  </section>
+);
 
 export default BookAdd;
