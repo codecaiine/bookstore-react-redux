@@ -1,20 +1,13 @@
-# Math Magicians
+# Bookstore
 
-Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make simple calculations, and read a random math-related quote.
+The Bookstore is an MVP version build with React and Redux that allows you to display a list of books, add a book and remove a selected book.
 
-![screenshot](./src/images/demo.PNG)
-
- 
-
-## Live Demo
-
-[Live Demo Link](https://math-magicians-aka.netlify.app/)
+![screenshot](./public/images/booklist.PNG)
 
 ## Built 
-- HTML
-- CSS
-- Javascript
+
 - React
+- Redux
 - Linters (React & Redux)
 - Git
 
@@ -22,35 +15,21 @@ Math magicians is a website for all fans of mathematics. It is a Single Page App
 
 Please get your browser update.
 
-. To get a local copy up and running follow these simple steps.
+. Step 1:  To get a local copy up and running follow these simple steps.
    ```
    git clone <URL> in your terminal
    ```
 
-. Run
+. Step 2: 
    ```
-   cd math-magicians
-   ```
+   cd bookstore-react-redux
 
-Install npm
-   ```
    npm install
-   ```
 
-   ```
    npm run build
-   ```
 
-Launch the server
+   npm start 
    ```
-   run start
-   ```
-
-Run the test 
-   ```
-   npm run test
-   ```
-
 
 ## Author
 
@@ -65,7 +44,7 @@ Run the test
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/codecaiine/math-magicians/issues).
+Feel free to check the [issues page](https://github.com/codecaiine/bookstore-react-redux/issues).
 
 ## Show your support
 
@@ -75,5 +54,4 @@ Give a ⭐️ if you like this project!
 
 - Thanks to Microverse
 - Yannick AKA
-- [ReactJs Examples](https://reactjsexample.com/tag/calculator/)
 
