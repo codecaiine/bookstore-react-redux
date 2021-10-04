@@ -1,23 +1,12 @@
 import React from 'react';
-import { Route, Switch } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import BookList from './components/BookList';
-import Categories from './components/Categories';
-import BookInput from './components/BookAdd';
+import './App.css';
+
+import Container from './components/Container';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Switch>
-        <Route exact path="/">
-          <BookList />
-          <BookInput />
-        </Route>
-        <Route path="/categories">
-          <Categories />
-        </Route>
-      </Switch>
+      <Container />
     </div>
   );
 }

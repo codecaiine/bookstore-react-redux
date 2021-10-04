@@ -1,15 +1,11 @@
 import React from 'react';
 
 const BookAdd = () => (
-  <section>
-    <h2>Add New Book</h2>
-
-    <form className="form">
-      <input type="text" placeholder="Book Title" />
-      <input type="text" placeholder="Book Author" />
-      <button type="submit">Add Book</button>
-    </form>
-  </section>
+  <form>
+    <input type="text" name="Title" placeholder="Title" />
+    <input type="text" name="Author" placeholder="Author" />
+    <input type="button" value="Add" />
+  </form>
 );
 
 export default BookAdd;
