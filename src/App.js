@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import { Route, Switch } from 'react-router-dom';
-import Books from './components/Books';
+import BookList from './components/BookList';
 import Categories from './components/Categories';
 import BookInput from './components/BookAdd';
 
@@ -11,7 +11,7 @@ function App() {
         <Navbar />
         <Switch>
           <Route exact path="/">
-          <Books />
+          <BookList />
           <BookInput />
           </Route>
           <Route path="/categories">
