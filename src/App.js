@@ -1,15 +1,24 @@
-import './App.css';
+import React from 'react';
+import Navbar from './components/Navbar';
+import { Route, Switch } from 'react-router-dom';
+import Books from './components/Books';
+import Categories from './components/Categories';
+import BookInput from './components/BookAdd';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-          Learn React
-      </header>
-    </div>
+     <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+          <Books />
+          <BookInput />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </div>
   );
 }
 
