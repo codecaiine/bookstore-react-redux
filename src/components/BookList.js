@@ -1,21 +1,40 @@
-/* eslint-disable react/jsx-key */
 import React from 'react';
+import { useDispatch, useSelector } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
+import { addBook, removeBook } from '../redux/books/Books';
 import Book from './Book';
+import BookAdd from './BookAdd';
 
 const BookList = () => {
-  const books = [
-    {
-      id: 1, name: 'Price of Persia', category: 'sc-fi', author: 'author 1',
-    },
-    {
-      id: 2, name: 'Spider Man', category: 'Comics', author: 'Stan Lee',
-    },
-  ];
+  const myBooks = useSelector((state) => state.booksReducer);
 
+  const dispatch = useDispatch();
+
+  const addNew = (title, author) => {
+    const newBook = {
+      id: uuidv4(),
+      title,
+      author,
+    };
+    dispatch(addBook(newBook));
+  };
+
+  const deleteOneBook = (id) => dispatch(removeBook(id));
+
+  if (myBooks.length) {
+    return (
+      <div>
+        <Book books={myBooks} propsToRemoveBooks={deleteOneBook} />
+        <BookAdd propsToAddBooks={addNew} />
+      </div>
+    );
+  }
   return (
-    <ul>
-      {books.map((book) => <Book book={book} />)}
-    </ul>
+    <div>
+      <h3>Not Book Added Yet !</h3>
+      <h3>Add your books and author ...</h3>
+      <BookAdd propsToAddBooks={addNew} />
+    </div>
   );
 };
 

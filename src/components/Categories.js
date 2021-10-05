@@ -1,5 +1,9 @@
 import React from 'react';
 
-const Container = () => <h4>Categories</h4>;
+const Categories = () => (
+  <div>
+    <h2>Under Construction</h2>
+  </div>
+);
 
-export default Container;
+export default Categories;
