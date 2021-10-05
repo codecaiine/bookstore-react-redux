@@ -14,7 +14,6 @@ const Book = ({ books, propsToRemoveBooks }) => (
         <button type="button" onClick={() => propsToRemoveBooks(book.id)}>Remove</button>
       </li>
     ))}
-    ;
   </ul>
 );
 

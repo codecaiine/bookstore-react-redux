@@ -27,7 +27,7 @@ const BookAdd = (props) => {
 
   return (
     <section>
-      <h2>Add New Book</h2>
+      <h2>Add a new book here</h2>
 
       <form className="form" onSubmit={handleSubmit}>
         <input

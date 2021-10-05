@@ -31,8 +31,8 @@ const BookList = () => {
   }
   return (
     <div>
-      <h3>No Books Yet...😔</h3>
-      <h3>Please type here 👇 to add your favorite books.</h3>
+      <h3>Not Book Added Yet !</h3>
+      <h3>Add your books and author ...</h3>
       <BookAdd propsToAddBooks={addNew} />
     </div>
   );
