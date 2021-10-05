@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBook, removeBook } from '../redux/books/Book';
 import Book from './Book';
-import BookInput from './BookInput';
+import BookAdd from './BookAdd';
 
 const BookList = () => {
   const myBooks = useSelector((state) => state.booksReducer);
@@ -25,7 +25,7 @@ const BookList = () => {
     return (
       <div>
         <Book books={myBooks} propsToRemoveBooks={deleteOneBook} />
-        <BookInput propsToAddBooks={addNew} />
+        <BookAdd propsToAddBooks={addNew} />
       </div>
     );
   }
