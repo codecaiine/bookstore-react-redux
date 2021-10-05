@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { addBook, removeBook } from '../redux/books/Book';
+import { addBook, removeBook } from '../redux/books/Books';
 import Book from './Book';
 import BookAdd from './BookAdd';
 
@@ -31,9 +31,9 @@ const BookList = () => {
   }
   return (
     <div>
-      <h3>No Books Yet😔</h3>
+      <h3>No Books Yet...😔</h3>
       <h3>Please type here 👇 to add your favorite books.</h3>
-      <BookInput propsToAddBooks={addNew} />
+      <BookAdd propsToAddBooks={addNew} />
     </div>
   );
 };

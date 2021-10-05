@@ -1,15 +1,27 @@
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import logger from 'redux-logger';
-import booksReducer from './books/Book';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import Navbar from './components/Navbar';
+import store from './redux/configureStore';
+import AllBooks from './components/AllBooks';
+import Categories from './components/Categories';
 
-const reducer = combineReducers({
-  booksReducer,
-  // additional reducers could be added here
-});
+function App() {
+  return (
+    <Provider store={store}>
+      <div className="App">
+        <Navbar />
+        <Switch>
+          <Route exact path="/">
+            <AllBooks />
+          </Route>
+          <Route path="/categories">
+            <Categories />
+          </Route>
+        </Switch>
+      </div>
+    </Provider>
+  );
+}
 
-const store = createStore(
-  reducer,
-  applyMiddleware(logger),
-);
-
-export default store;
+export default App;
