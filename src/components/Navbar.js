@@ -22,7 +22,7 @@ const Navbar = () => {
           <h1>Bookstore CMS</h1>
           <ul>
             {links.map((link) => (
-             
+
               <li
                 key={link.id}
                 className="link"
