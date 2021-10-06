@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
-import { deleteBook } from '../redux/Books/Books';
+import { deleteBook } from '../redux/books/Books';
 
 const Book = ({ books }) => {
   const dispatch = useDispatch();
