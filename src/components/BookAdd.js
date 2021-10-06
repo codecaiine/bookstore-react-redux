@@ -30,7 +30,7 @@ const BookAdd = () => {
   };
 
   return (
-    <section>
+    <section className="form-section">
       <h2>Add a new book here</h2>
 
       <form className="form" onSubmit={handleSubmit}>
