@@ -27,7 +27,6 @@ const Book = ({
   </section>
 );
 
-
 Book.propTypes = {
   id: PropTypes.string,
   category: PropTypes.string,

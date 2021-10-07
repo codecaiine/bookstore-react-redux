@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BooksChapter = () => (
+const Chapter = () => (
   <section className="chapters">
     <div className="current-chapter">
       <span className="current-chapter-one">CURRENT CHAPTER</span>
@@ -10,4 +10,4 @@ const BooksChapter = () => (
   </section>
 );
 
-export default BooksChapter;
+export default Chapter;

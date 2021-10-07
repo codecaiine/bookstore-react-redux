@@ -1,33 +1,35 @@
-import { React, useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getBooks } from '../redux/books/Books';
+import React from 'react';
+import PropTypes from 'prop-types';
+import { v4 as uuidv4 } from 'uuid';
 import Book from './Book';
-import BookAdd from './BookAdd';
 
-const BookList = () => {
-  const myBooks = useSelector((state) => state.booksReducer);
+const BookList = ({ books }) => (
+  <section className="book-section">
+    <ul className="book-list">
+      {books.map((book) => {
+        const {
+          id,
+          category,
+          title,
+        } = book;
+        return (
+          <li key={uuidv4()} className="list">
+            <div>
+              <Book
+                id={id}
+                category={category}
+                title={title}
+              />
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  </section>
+);
 
-  const dispatch = useDispatch();
-
-  useEffect(() => {
-    dispatch(getBooks());
-  }, []);
-
-  if (myBooks.length) {
-    return (
-      <div>
-        <Book books={myBooks} />
-        <BookAdd />
-      </div>
-    );
-  }
-  return (
-    <div>
-      <h3>Not Book Added Yet !</h3>
-      <h3>Add your books and author ...</h3>
-      <BookAdd />
-    </div>
-  );
+BookList.propTypes = {
+  books: PropTypes.instanceOf(Array).isRequired,
 };
 
 export default BookList;

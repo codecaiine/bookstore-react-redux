@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import { deleteBook } from '../redux/Books/Books';
+import { deleteBook } from '../redux/books/Books';
 
 const Actions = ({ id }) => {
   const dispatch = useDispatch();
@@ -15,11 +15,11 @@ const Actions = ({ id }) => {
   );
 };
 
-BookActions.propTypes = {
+Actions.propTypes = {
   id: PropTypes.string,
 };
 
-BookActions.defaultProps = {
+Actions.defaultProps = {
   id: '',
 };
 

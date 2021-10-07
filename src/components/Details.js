@@ -9,12 +9,12 @@ const Details = ({ category, title }) => (
   </section>
 );
 
-BookDetails.propTypes = {
+Details.propTypes = {
   category: Proptypes.string,
   title: Proptypes.string,
 };
 
-BookDetails.defaultProps = {
+Details.defaultProps = {
   category: '',
   title: '',
 };

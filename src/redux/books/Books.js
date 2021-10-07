@@ -3,7 +3,7 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const FETCH_BOOK_SUCCESS = 'bookStore/books/FETCH_BOOK_SUCCESS';
 
 const initialState = [];
-const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/whgDZlKfkZhKxDtP9JO5/books';
+const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/5zMMqUSQNdXSqvtJXpKy/books';
 
 export const fetchBookSuccess = (payload) => ({
   type: FETCH_BOOK_SUCCESS,
@@ -14,6 +14,7 @@ export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
 });
+
 export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
   payload,
@@ -63,6 +64,7 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_BOOK_SUCCESS:
       return action.payload;
+
     case ADD_BOOK:
       return [...state, action.payload];
 
