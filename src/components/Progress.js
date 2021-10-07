@@ -4,8 +4,8 @@ const Progress = () => (
   <div className="progress">
     <div className="progress-img" />
     <div>
-      <p className="percent">62%</p>
-      <p className="completed">Completed</p>
+      <p className="percent">79%</p>
+      <p className="completed">Ongoing</p>
     </div>
   </div>
 );
