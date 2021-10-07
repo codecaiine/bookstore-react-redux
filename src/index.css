@@ -46,6 +46,7 @@ hr {
   display: flex;
   gap: 20px;
   align-items: center;
+  background: #fff;
 }
 
 .navbar h1 {

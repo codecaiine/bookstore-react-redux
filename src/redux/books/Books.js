@@ -3,7 +3,7 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 const FETCH_BOOK_SUCCESS = 'bookStore/books/FETCH_BOOK_SUCCESS';
 
 const initialState = [];
-const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/5zMMqUSQNdXSqvtJXpKy/books';
+const apiUrl = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/whgDZlKfkZhKxDtP9JO5/books';
 
 export const fetchBookSuccess = (payload) => ({
   type: FETCH_BOOK_SUCCESS,
