@@ -2,7 +2,14 @@
 
 The Bookstore is an MVP version build with React and Redux that allows you to display a list of books, add a book and remove a selected book.
 
-![screenshot](./public/images/booklist.PNG)
+![screenshot](./public/images/demo.PNG)
+
+![screenshot Input](./public/images/demoInput.PNG)
+
+
+## Live Demo
+
+See the live [demo](https://bookstore-react-redux-aka.netlify.app/) hosted on Netlify.
 
 ## Built 
 

@@ -14,6 +14,7 @@ export const addBook = (payload) => ({
   type: ADD_BOOK,
   payload,
 });
+
 export const removeBook = (payload) => ({
   type: REMOVE_BOOK,
   payload,
@@ -63,6 +64,7 @@ const reducer = (state = initialState, action) => {
   switch (action.type) {
     case FETCH_BOOK_SUCCESS:
       return action.payload;
+
     case ADD_BOOK:
       return [...state, action.payload];
 
