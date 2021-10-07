@@ -6,6 +6,11 @@ The Bookstore is an MVP version build with React and Redux that allows you to di
 
 ![screenshot Input](./public/images/demoInput.PNG)
 
+
+## Live Demo
+
+See the live [demo](https://bookstore-react-redux-aka.netlify.app/) hosted on Netlify.
+
 ## Built 
 
 - React
