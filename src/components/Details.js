@@ -1,7 +1,7 @@
 import React from 'react';
 import Proptypes from 'prop-types';
 
-const BookDetails = ({ category, title }) => (
+const Details = ({ category, title }) => (
   <section className="book-info">
     <p className="category">{category}</p>
     <h3 className="title">{title}</h3>
@@ -19,4 +19,4 @@ BookDetails.defaultProps = {
   title: '',
 };
 
-export default BookDetails;
+export default Details;

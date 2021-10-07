@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BookProgress = () => (
+const Progress = () => (
   <div className="progress">
     <div className="progress-img" />
     <div>
@@ -10,4 +10,4 @@ const BookProgress = () => (
   </div>
 );
 
-export default BookProgress;
+export default Progress;
